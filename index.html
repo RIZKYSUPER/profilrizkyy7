@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Rizky</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .profile {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Profil Rizky</h1>
+        <p>Selamat datang di halaman profil saya!</p>
+    </header>
+
+    <nav>
+        <a href="#profile">Profil</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <section id="profile" class="profile">
+            <img src="https://files.catbox.moe/sowuru.jpg" alt="Foto Profil">
+            <h2>Nama Pengguna</h2>
+            <p>Halo! Saya adalah seorang pengembang web yang bersemangat dalam menciptakan solusi digital yang kreatif dan fungsional. Saya memiliki pengalaman dalam HTML, CSS, JavaScript, dan berbagai framework modern.</p>
+            <p><strong>Email:</strong> examplerizky@gmail.com</p>
+            <p><strong>Lokasi:</strong> Lampung, Indonesia</p>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Galeri Foto</h2>
+            <img src="https://files.catbox.moe/ynwupc.jpeg" alt="Foto 1">
+            <img src="https://files.catbox.moe/8tfzfm.jpeg" alt="Foto 2">
+            <img src="https://files.catbox.moe/sxg755.jpeg" alt="Foto 3">
+            <img src="https://files.catbox.moe/7xzk7i.jpg" alt="Foto 4">
+            <img src="https://files.catbox.moe/ub2ssc.png" alt="Foto 5">
+            <img src="https://files.catbox.moe/rvu963.jpg" alt="Foto 6">
+        </section>
+
+        <section id="contact" class="contact-form">
+            <h2>Hubungi Saya</h2>
+            <form action="#" method="post">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Profil Rizky. Dibuat dengan oleh Rizky.</p>
+    </footer>
+
+    <script>
+        // Contoh JavaScript sederhana untuk interaksi
+        document.querySelector('nav').addEventListener('click', function(event) {
+            if (event.target.tagName === 'A') {
+                event.preventDefault();
+                const targetId = event.target.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
+
+</body>
+</html>#ff0000#edff54#ff5454
